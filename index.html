@@ -1,12 +1,24 @@
-<h1>Cadastro de pessoas</h1>
-<form class="form js-form">
-    <label for="name">
-        Nome
-        <input class="form-field js-field" id="name" maxlength="120" name="name" required type="text">
-    </label>
-    <label for="birth-date">
-        Data de Nascimento
-        <input class="form-field js-field" id="birth-date" name="birth-date" required type="date">
-    </label>
-    <button type="submit">Salvar</button>
-</form>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de pessoas</h1>
+    <form id="form">
+        <label for="name">Nome:</label>
+        <input class="form-field js-field" id="name" maxlength="120" name="name" type="text" required>
+        <br><br>
+        <label for="birth-date">Data de Nascimento:</label>
+        <input class="form-field js-field" id="birth-date" name="birth-date" type="date" required>
+        <br><br>
+        <button type="submit">Salvar</button>
+    </form>
+    <script src='script.js'></script>
+</body>
+
+</html>

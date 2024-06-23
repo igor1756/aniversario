@@ -1,0 +1,93 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container centralizado para o formulário */
+form {
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título da página */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bb86fc;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo dos campos do formulário */
+.form-field {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-field:focus {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Estilo dos rótulos */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #bb86fc;
+    width: 100%;
+    text-align: left;
+}
+
+/* Estilo do botão de submit */
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background-color: #bb86fc;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #8f54d4;
+    transform: scale(1.05);
+}
+
+/* Espaçamento entre campos */
+br {
+    display: none; /* Ocultar os <br> pois estamos utilizando margens */
+}
